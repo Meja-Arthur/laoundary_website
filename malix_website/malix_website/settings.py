@@ -135,11 +135,17 @@ TEMPLATES = [
 
 
 
+
+
+# This is the URL where your static files will be served from.
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_files')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Add the absolute paths of your static files directories here.
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    # Add more directories if necessary
+]
+
 
 
 

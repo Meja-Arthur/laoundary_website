@@ -5,3 +5,5 @@ from django.views.generic import ListView, DetailView, View
 
 def my_view(request):
     return render(request, 'index.html')
+def about(request):
+    return render(request, 'about.html')
